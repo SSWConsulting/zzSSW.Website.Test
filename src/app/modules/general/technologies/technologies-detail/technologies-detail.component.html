@@ -1,0 +1,5 @@
+<div class="technology">
+  <img src={{technology.image.value[0].url}} alt={{technology.image.value[0].description}} />
+  <h2>{{technology.heading.value}}</h2>
+  <div [innerHTML]="technology.body.value | safe: 'html'"></div>
+</div>

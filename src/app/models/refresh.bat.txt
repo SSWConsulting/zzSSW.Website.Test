@@ -1,0 +1,1 @@
+kontent-generate --projectId=c8c27f8d-758d-0020-22c5-e689f5973608 --moduleResolution=ES2015 --codeType=TypeScript

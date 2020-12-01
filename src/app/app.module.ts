@@ -1,18 +1,39 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './modules/general/home/home.component';
+import { NotFoundComponent } from './modules/general/not-found/not-found.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AngularHttpServiceModule } from '@kentico/kontent-angular-http-service';
+import { HeaderComponent } from './modules/general/header/header.component';
+import { HeaderNavigationComponent } from './modules/general/header-navigation/header-navigation.component';
+import { FooterComponent } from './modules/general/footer/footer.component';
+import { TestimonialsModule } from './modules/general/testimonials/testimonials.module';
+import { TechnologiesModule } from './modules/general/technologies/technologies.module';
+import { BenefitsModule } from './modules/general/benefits/benefits.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NotFoundComponent,
+    FooterComponent,
+    HeaderComponent,
+    HeaderNavigationComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularHttpServiceModule,
+    BrowserAnimationsModule,
+    TestimonialsModule,
+    TechnologiesModule,
+    BenefitsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

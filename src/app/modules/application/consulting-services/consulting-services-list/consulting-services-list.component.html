@@ -1,0 +1,5 @@
+<ul *ngIf="consultingServices$">
+  <li *ngFor="let consultingService of consultingServices">
+    <a [routerLink]="['/consulting/', consultingService.system.codename]" routerLinkActive="router-link-active" >{{ consultingService.heading.value }}</a>
+  </li>
+</ul>

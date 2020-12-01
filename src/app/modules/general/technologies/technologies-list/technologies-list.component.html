@@ -1,0 +1,5 @@
+<ul *ngIf="technologies">
+    <li *ngFor="let technology of technologies">
+      <app-technologies-detail [technology]="technology"></app-technologies-detail>
+    </li>
+  </ul>

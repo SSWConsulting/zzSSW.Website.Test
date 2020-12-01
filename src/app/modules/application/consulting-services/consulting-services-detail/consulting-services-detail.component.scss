@@ -1,0 +1,115 @@
+@import "../../../../../resets.scss";
+
+button {
+  transition: all .1s;
+  background: $ssw-red;
+  box-shadow: 0 1px 1px #333;
+  color: #fff!important;
+  border-bottom: 0!important;
+  font-weight: 400;
+  font-size: 25.6rem;
+  padding: 30px 0;
+  margin-top: 50px;
+  width: 43%;
+}
+
+section.hero {
+  background: rgba(0,0,0,.75) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  max-width: 100%;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 4px solid #cc4141;
+  h1 {
+    padding-top: 120px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  h2 {
+    padding-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../../../../../assets/images/backgrounds/consulting.jpg) no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+  }
+}
+
+section.body,
+section.benefits {
+  background-image: url(../../../../../assets/images/backgrounds/consulting-benefits.jpg);
+  min-height: 850px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+
+section.about-ssw {
+  background-image: url(../../../../../assets/images/backgrounds/consulting-about.jpg);
+  min-height: 850px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+
+section.clients {
+  min-height: 347px;
+  background-color: #f5f5f5;
+  padding-bottom: 150px;
+}
+
+section.testimonials {
+  padding: 100px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+section.technologies {
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+
+
+section.call-to-action {
+  background-color: #f5f5f5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    padding-top: 120px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  h2 {
+    padding-top: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+

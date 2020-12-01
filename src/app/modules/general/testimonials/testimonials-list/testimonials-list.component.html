@@ -1,0 +1,5 @@
+<ul *ngIf="testimonials">
+  <li *ngFor="let testimonial of testimonials">
+    <app-testimonials-detail [testimonial]="testimonial"></app-testimonials-detail>
+  </li>
+</ul>

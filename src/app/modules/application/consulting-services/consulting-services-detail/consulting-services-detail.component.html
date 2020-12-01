@@ -1,0 +1,40 @@
+<ng-container *ngIf="consultingService">
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="/assets/videos/backgrounds/consulting.mp4" type="video/mp4">
+    </video>
+    <div class="header">
+      <h1 [innerHTML]="consultingService.item.heading.value | strongFirstWord | safe: 'html'"></h1>
+      <h2 [innerHTML]="consultingService.item.subHeading.value | safe: 'html'"></h2>
+      <button type="button" class="hoverable" [@inOut]="isOut ? 'out' : 'in'" ><div class="anim"></div>Book a FREE Initial Meeting</button>
+      <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
+    </div>
+  </section>
+  <section class="body">
+    <p [innerHTML]="consultingService.item.body.value | embedLinkedItems: consultingService.linkedItems | strongFirstWordH1 | safe: 'html'"></p>
+  </section>
+  <section class="benefits">
+    <app-benefits-list [benefits]="consultingService.item.benefits.value[0]"></app-benefits-list>
+  </section>
+  <section class="testimonials">
+    <app-testimonials-list [testimonials]="consultingService.item.testimonials.value"></app-testimonials-list>
+    <button type="button" class="hoverable" [@inOut]="isOut ? 'out' : 'in'" ><div class="anim"></div>Book a FREE Initial Meeting</button>
+    <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
+  </section>
+  <section class="about-ssw">
+      <h1><strong>About</strong> SSW</h1>
+  </section>
+  <section class="clients">
+      <h1><strong>Companies</strong> we have worked with</h1>
+  </section>
+  <section class="technologies">
+      <h1><strong>Technologies</strong></h1>
+    <app-technologies-list [technologies]="consultingService.item.technologyTiles.value"></app-technologies-list>
+  </section>
+  <section class="call-to-action">
+    <h1 [innerHTML]="consultingService.item.talkToUs.value | strongFirstWord | safe: 'html'"></h1>
+    <h2>Jump on a call with one of our Account Managers to discuss how we can help you.</h2>
+    <button type="button" class="hoverable" [@inOut]="isOut ? 'out' : 'in'" ><div class="anim"></div>Book a FREE Initial Meeting</button>
+    <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
+  </section>
+</ng-container>
