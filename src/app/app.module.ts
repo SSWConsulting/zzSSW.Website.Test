@@ -6,7 +6,6 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AngularHttpServiceModule } from '@kentico/kontent-angular-http-service';
 import { HeaderComponent } from './modules/general/header/header.component';
 import { HeaderNavigationComponent } from './modules/general/header-navigation/header-navigation.component';
 import { FooterComponent } from './modules/general/footer/footer.component';
@@ -25,7 +24,6 @@ import { BenefitsModule } from './modules/general/benefits/benefits.module';
   ],
   imports: [
     AppRoutingModule,
-    AngularHttpServiceModule,
     BrowserAnimationsModule,
     TestimonialsModule,
     TechnologiesModule,

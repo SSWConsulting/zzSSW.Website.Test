@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { ConsultingService } from 'src/app/models/consulting_service';
 import { EmbedYoutube } from 'src/app/models/embed_youtube';
 import { ItemResponses, IDeliveryClient, DeliveryClient, TypeResolver } from '@kentico/kontent-delivery';
-import { AngularHttpService } from '@kentico/kontent-angular-http-service';
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { TestimonialTile } from 'src/app/models/testimonial_tile';
@@ -49,7 +48,7 @@ export class ConsultingServicesDetailComponent implements OnInit {
     this.isOut = !this.isOut;
   }
 
-  constructor(private angularHttpService: AngularHttpService, private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute) {
     this.deliveryClient = new DeliveryClient({
       projectId: 'c8c27f8d-758d-0020-22c5-e689f5973608',
       typeResolvers: [
@@ -59,8 +58,7 @@ export class ConsultingServicesDetailComponent implements OnInit {
         new TypeResolver('technology_tile', () => new TechnologyTile()),
         new TypeResolver('benefits_list', () => new BenefitsList()),
         new TypeResolver('benefit_tile', () => new BenefitTile())
-      ],
-      httpService: angularHttpService
+      ]
     });
   }
 

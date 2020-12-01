@@ -10,8 +10,8 @@
       <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
     </div>
   </section>
-  <section class="body">
-    <p [innerHTML]="consultingService.item.body.value | embedLinkedItems: consultingService.linkedItems | strongFirstWordH1 | safe: 'html'"></p>
+  <section class="main">
+    <span [innerHTML]="consultingService.item.body.value | embedLinkedItems: consultingService.linkedItems | strongFirstWordH1 | safe: 'html'"></span>
   </section>
   <section class="benefits">
     <app-benefits-list [benefits]="consultingService.item.benefits.value[0]"></app-benefits-list>
@@ -22,14 +22,18 @@
     <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
   </section>
   <section class="about-ssw">
-      <h1><strong>About</strong> SSW</h1>
+      <h1><strong>Why</strong> should you choose SSW?</h1>
+      <p>SSW's Consulting Services have delivered best of breed Microsoft solutions for more than 1,000 clients in 15 countries. With 40+ consultants in five countries, SSW's developers are some of the best in the business. We have many Microsoft Certifications, three MVPs, and a Microsoft Regional Director.</p>
   </section>
   <section class="clients">
       <h1><strong>Companies</strong> we have worked with</h1>
+      <img src="https://www.ssw.com.au/SSW/images/consulting/clients1.png" alt="SSW Clients">
+      <img src="https://www.ssw.com.au/SSW/images/consulting/clients2.png" alt="SSW Clients">
+      <img src="https://www.ssw.com.au/SSW/images/consulting/clients3.png" alt="SSW Clients">
   </section>
   <section class="technologies">
       <h1><strong>Technologies</strong></h1>
-    <app-technologies-list [technologies]="consultingService.item.technologyTiles.value"></app-technologies-list>
+    <app-technologies-list [technologies]="consultingService.item.technologyTiles.value" class="container"></app-technologies-list>
   </section>
   <section class="call-to-action">
     <h1 [innerHTML]="consultingService.item.talkToUs.value | strongFirstWord | safe: 'html'"></h1>

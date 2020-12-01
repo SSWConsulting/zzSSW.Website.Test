@@ -1,8 +1,8 @@
-ul {
+.testimonials {
     display: flex;
     flex-wrap: wrap;
 
-    li {
+    .testimonial {
         flex-grow: 1;
         width: 29%;
         margin: 0 2%;
