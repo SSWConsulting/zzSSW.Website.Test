@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent, },
   {
     path: 'consulting',
-    loadChildren: './modules/application/consulting-services/consulting-services.module#ConsultingServicesModule' ,
+    loadChildren: () => import('./modules/application/consulting-services/consulting-services.module').then(m => m.ConsultingServicesModule) ,
   },
   { path: '**', component: NotFoundComponent }
 ];
