@@ -1,16 +1,24 @@
-The scenario for the Angular test is:
+Hi,
 
-A SSW Developer has started to create a CMS driven version of our Consulting in Angular. A sample of the existing pages is: https://www.ssw.com.au/ssw/Consulting/Bots.aspx
+As per our conversation, I started to write a CMS driven version of our Consulting pages in Angular. A sample of an existing page is:
+ https://www.ssw.com.au/ssw/Consulting/Bots.aspx
 
-They are having problems styling the main content of the page (which is the "Bots in Action" section of the sample content. Repo for the CMS driven version is at: https://github.com/SSWConsulting/SSW.Website.Test
+I’m having problems styling the main content of the page (which is the "Bots in Action" section of the sample content). The Repo for the CMS driven version is at:
+ https://github.com/SSWConsulting/SSW.Website.Test
 
+Can you please help me out with this?
 
 The new page with the content from the Bot sample can be accessed at: /consulting/bots
 
-1. git clone https://github.com/SSWConsulting/SSW.Website.Test.git ssw-website
-2. Update the CSS so that "Bot in Action" section looks like the existing page.
-3. The developer also needs help with the CSS for the Testimonials section. The company name needs to be aligned to the left with the person's name.
-4. Please add the hover animation to the book initial meeting button.
+1.	Clone the repo. git clone https://github.com/SSWConsulting/SSW.Website.Test.git ssw-website
+2.	Create a branch for your updates.
+3.	Update the CSS so that "Bot in Action" section looks like the existing page.
+4.	I also need help with the CSS for the Testimonials section. The company name needs to be aligned to the left with the person's name.
+5.	Please add the hover animation to the book initial meeting button.
+6.	Create a pull request for your branch and let me know that you’re done
 
-If you have any questions about the code, the SSW Developer, Greg, can be reached on: 0403 482 523 
+If you have any questions, feel free to get in touch.
 
+Cheers,
+Greg
++61 403 482 523 
