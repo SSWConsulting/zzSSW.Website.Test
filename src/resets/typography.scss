@@ -13,6 +13,9 @@ body {
 }
 
 h1 {
+  padding-top: 120px;
+  max-width: 80%;
+  margin: 0 auto;
   font-size: 45rem;
   font-weight: 300;
   strong {
@@ -20,7 +23,43 @@ h1 {
     font-weight: 400;
   }
 }
+
 h2 {
+  padding-top: 20px;
+  max-width: 80%;
+  margin: 0 auto;
   font-size: 28rem;
   font-weight: 300;
+}
+
+h3 {
+  font-size: 28rem;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 28rem;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section h5 {
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: inherit;
+}
+
+p {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  line-height: inherit;
 }

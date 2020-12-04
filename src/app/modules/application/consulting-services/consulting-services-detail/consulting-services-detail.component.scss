@@ -1,17 +1,5 @@
 @import "../../../../../resets.scss";
 
-h1 {
-  padding-top: 120px;
-  max-width: 80%;
-  margin: 0 auto;
-}
-h2 {
-  padding-top: 20px;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-
 button {
   transition: all .1s;
   background: $ssw-red;
@@ -23,112 +11,72 @@ button {
   padding: 30px 0;
   margin-top: 50px;
   width: 43%;
+  &.ripple {
+    background-position: center;
+    transition: background 0.5s;
+    &:hover {
+      background: #cc1010 radial-gradient(circle, transparent 1%, #cc1010 1%) center/15000%;
+    }
+    &:active {
+      background-color: #dd1111;
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+  
+  
 }
 
-section.hero {
-  background: rgba(0,0,0,.75) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
-  max-width: 100%;
+section {
   padding-bottom: 100px;
   color: #ffffff;
   text-align: center;
-  border-bottom: 4px solid #cc4141;
-  h1 {
-    padding-top: 120px;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  h2 {
-    padding-top: 20px;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background: url(../../../../../assets/images/backgrounds/consulting.jpg) no-repeat;
-    background-size: cover;
-    transition: 1s opacity;
-  }
-}
-
-section.main {
   background-image: url(../../../../../assets/images/backgrounds/consulting-benefits.jpg);
-  min-height: 850px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 100px;
-  color: #ffffff;
-  text-align: center;
 
-}
+  &.hero {
+    background: rgba(0,0,0,.75) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+    max-width: 100%;
+    color: #ffffff;
+    border-bottom: 4px solid #cc4141;
 
-section.benefits {
-  background-image: url(../../../../../assets/images/backgrounds/consulting-benefits.jpg);
-  min-height: 850px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 100px;
-  color: #ffffff;
-  text-align: center;
-
-}
-
-section.about-ssw {
-  background-image: url(../../../../../assets/images/backgrounds/consulting-about.jpg);
-  min-height: 850px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 100px;
-  color: #ffffff;
-  text-align: center;
-}
-
-section.clients {
-  min-height: 347px;
-  background-color: #f5f5f5;
-  padding-bottom: 150px;
-  text-align: center;
-  h1 {
-    padding-top: 120px;
-    max-width: 80%;
-    margin: 0 auto;
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  &.testimonials {
+    padding: 100px 0;
+    background: #ffffff;
+    color: #333;
+  }
+  &.clients {
+    background: #f5f5f5;
+    color: #333;  
+  }
+  &.about-ssw {
+    background-image: url(../../../../../assets/images/backgrounds/consulting-about.jpg);
+    img { 
+      float: left;
+    }
   }
 
-  img {
-    padding-top: 60px;
+  &.technologies {
+    padding: 100px 0;
+    background: #ffffff;
+    color: #333;
   }
-}
 
-section.testimonials {
-  padding: 100px 0;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-section.technologies {
-  padding-bottom: 100px;
-  background-color: #ffffff;
-  text-align: center;
-  h1 {
-    padding-top: 100px;
-    padding-bottom: 50px;
-    max-width: 80%;
-    margin: 0 auto;
-  }
 }
 
 section.call-to-action {
@@ -139,17 +87,6 @@ section.call-to-action {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  h1 {
-    padding-top: 120px;
-    max-width: 80%;
-    margin: 0 auto;
-  }
-  h2 {
-    padding-top: 20px;
-    max-width: 80%;
-    margin: 0 auto;
-  }
 
 }
 

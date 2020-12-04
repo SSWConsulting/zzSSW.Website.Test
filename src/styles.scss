@@ -8,8 +8,13 @@ header, main, footer {
 
 img.youtube {
   max-width: 100%;
+  margin: 20px;
 }
 
 .wip {
   display: none !important;
+}
+
+p.main{
+  padding: 8%;
 }
