@@ -1,42 +1,132 @@
 <ng-container *ngIf="consultingService">
-  <section class="hero">
+  <section class="video-background">
     <video autoplay muted loop playsinline>
       <source src="/assets/videos/backgrounds/consulting.mp4" type="video/mp4">
     </video>
-    <div class="header">
-      <h1 [innerHTML]="consultingService.item.heading.value | strongFirstWord | safe: 'html'"></h1>
-      <h2 [innerHTML]="consultingService.item.subHeading.value | safe: 'html'"></h2>
-      <button type="button" class="ripple">Book a FREE Initial Meeting</button>
-      <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
-    </div>
-  </section>
-  <section class="main" [innerHTML]="consultingService.item.body.value | embedLinkedItems: consultingService.linkedItems | strongFirstWordH1 | safe: 'html'">
-  </section>
-  <section class="benefits">
-    <app-benefits-list [benefits]="consultingService.item.benefits.value[0]"></app-benefits-list>
-  </section>
-  <section class="testimonials">
-    <app-testimonials-list [testimonials]="consultingService.item.testimonials.value"></app-testimonials-list>
+    <h1><strong>Want</strong> to have a business grade bot powered by serious AI?</h1>
+    <h2>SSW know how to build powerful bots that empower office workers and improve your results</h2>
     <button type="button" class="ripple">Book a FREE Initial Meeting</button>
     <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
   </section>
-  <section class="about-ssw">
+  <section class="image-background">
+    <h1><strong><strong>Bots</strong></strong> in action</h1>
+    <img class="youtube" src="https://i.ytimg.com/vi/G_v5B_gYceM/hqdefault.jpg" alt="Microsoft’s Semantic Machines Showcases New Conversational AI Technology">
+    <p>SSW build awesome bots for enterprises giving you an advantage in finding and automatically entering data using advanced business grade artificial intelligence, as well as helping your team complete tasks more effectively.</p>
+    <p>Your bots promote an effective and productive workplace and many companies are already using them more than they use search.</p>
+    <h2>What bots do you need?</h2>
+    <p>Many industries can benefit from having their own bots in many different ways. Here are some ideas of how a bot can improve your business results:</p>
+    <h3>Customer service bots</h3>
+    <p>If you either selling a service or a product, you can provide 24/7 customer service without worrying about unexpected problems with your team, as bots are always ready to help.</p>
+    <h3>Human resources bots</h3>
+    <p>You can use bots at every stage, all the way from onboarding, to ongoing training and support.</p>
+    <h3>Marketing &amp; Branding bots</h3>
+    <p>Your Marketing team can use a bot to surface the data they need to provide them with insights to improve their strategies. To raise awareness about your brand, you can have bots on your social media starting conversation with your clients.</p>
+    <h3>Sales &amp; Finance bots</h3>
+    <p>To increase your online sales, you can have a bot reminding a client they have items left in their cart or even offering a special coupon. To help your business’ finance, they can do everything from general accounting to financial planning and external reporting.</p>
+    <p>This is beyond the personal bots that you may know e.g. Google Assistant, Apple Siri, Amazon Alexa or Microsoft Cortana. They are famous for their powerful natural language processing performance and are available on PCs as well as mobile apps.</p>
+    <p>Now imagine what a Siri for your own business could do for you.</p>
+    <img class="youtube" src="https://i.ytimg.com/vi/1k3JKcf35vI/hqdefault.jpg" alt="What are Bots? (Litware Insurance Demo)">
+    <p>Meanwhile, in office management, Sophie AI from SSW is a good example of an enterprise grade bot that is very useful for office workers.&nbsp;<a href="https://sswsophie.com/">See SSW Sophie AI</a>.</p>  
+    <h1><strong>The</strong> Benefits of using Bots</h1>
+    <div class="benefits">
+      <div class="benefit">
+        <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/c9f890f7-e808-4570-87dd-e747efe9fe37/up-and-running-zendesk.png" alt="">
+    <h4>Fast Answers – Save Time</h4>
+    <p>With Natural Language Processing, bots can understand both written and verbal requests across different locations such as Slack, Skype, Google Assistant, or even on your website. They can be used to answer questions from your team or your client. You can seek help from bots wherever and whenever you want.</p>
+    </div>
+    <div class="benefit">
+    <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/f5222bbe-f9b7-4408-95c6-820c18a8bcc2/Look-into-the-Future.png" alt="">
+    <h4>Increase Sales</h4>
+    <p>If you have an ecommerce site, your bot can also suggest or remember products that your client has already searched for. It can also offer a special code as a strategy to reduce your abandonment rate and increase sales.</p>
+    </div>
+    <div class="benefit">
+    <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/c7374dfd-4552-4875-8614-2eef89da886b/crm-integration.png" alt="">
+    <h4>Easy Integration with Common Apps or Enterprise Services</h4>
+    <p>More and more people are using instant messaging over browsing websites and social media profiles. In addition, people tend to keep using the main apps they already have (such as Facebook, Messenger, WhatsApp, Skype, etc) to get customer service. If you want a chatbot for your website, you could simply integrate your system into common and existing apps.</p>
+    </div>
+    <div class="benefit">
+    <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/beb27b5a-2589-4d89-b4fd-71a1d993d605/business-processes.png" alt="">
+    <h4>Assistance Available 24/7 for your clients</h4>
+    <p>Many businesses have 24-hour customer support, but if you have certain peak hours, a customer will still have to wait to get in touch with an agent that can help them. Bots don't have unexpected meetings, they don't get tired or sick and will continue providing assistance to your clients or your team.</p>
+    </div>
+    <div class="benefit">
+    <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/72362bd9-fb63-42df-a0a1-9fde40725510/self-service.svg" alt="">
+    <h4>Efficiency, Automated</h4>
+    <p>Automation is one of the most significant key factors in enhancing work efficiency. With the help of bots, you can automate mundane tasks and have them enter data for you.</p>
+    </div>
+    </div>
+</section>
+  <section class="white-background">
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="speech-bubble">
+          <div class="arrow"></div>
+          <p>We have dealt with several people at SSW from a network tech helping us with a domain issue, to a couple of graphic designers and several programmers and they have ALL been first rate.</p>
+        </div>
+        <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/794a8104-7d0a-4963-8b0f-d54df64ff4b3/peter-dimaridis.jpg" alt="Peter Dimaridis" />
+        <p class="name">Peter Dimaridis</p>
+        <p class="company">Auction Plus</p>
+      </div>
+      <div class="testimonial">
+        <div class="speech-bubble">
+          <div class="arrow"></div>
+          <p>... out of all the developers I have used in the past [SSW] provide the most complete solutions and best outcomes. Thanks for your attention to detail once again.</p>
+        </div>
+        <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/34691bb5-a6fb-4255-a34c-8621687c87dd/peter-m.jpg" alt="Peter McCurdy" />
+        <p class="name">Peter McCurdy</p>
+        <p class="company">PDS</p>
+      </div>
+      <div class="testimonial">
+        <div class="speech-bubble">
+          <div class="arrow"></div>
+          <p>It was a pleasure to have you in the office again. I continue to be impressed by the quality of work and advice you provide.</p>
+        </div>
+        <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/3d621dce-9527-48b2-9914-5a868c141686/mark_p.jpg" alt="Mark Pigram" />
+        <p class="name">Mark Pigram</p>
+        <p class="company">Contracts Online</p>
+      </div>
+    </div>
+    <button type="button" class="ripple">Book a FREE Initial Meeting</button>
+    <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>
+  </section>
+  <section class="consulting-image-background">
       <h1><strong>Why</strong> should you choose SSW?</h1>
       <div class="video-player" data-id="Jveq6VFjWTA" data-youkuid=""></div>
       <p>SSW's Consulting Services have delivered best of breed Microsoft solutions for more than 1,000 clients in 15 countries. With 40+ consultants in five countries, SSW's developers are some of the best in the business. We have many Microsoft Certifications, three MVPs, and a Microsoft Regional Director.</p>
   </section>
-  <section class="clients">
+  <section class="offwhite-background">
       <h1><strong>Companies</strong> we have worked with</h1>
       <img src="/assets/images/clients/clients1.png" alt="SSW Clients">
       <img src="/assets/images/clients/clients2.png" alt="SSW Clients">
       <img src="/assets/images/clients/clients3.png" alt="SSW Clients">
   </section>
-  <section class="technologies">
+  <section class="white-background">
       <h1><strong>Technologies</strong></h1>
-    <app-technologies-list [technologies]="consultingService.item.technologyTiles.value" class="container"></app-technologies-list>
-  </section>
-  <section class="call-to-action">
-    <h1 [innerHTML]="consultingService.item.talkToUs.value | strongFirstWord | safe: 'html'"></h1>
+      <div class="technologies">
+        <div class="technology">
+          <img src="https://assets-us-01.kc-usercontent.com:443/c8c27f8d-758d-0020-22c5-e689f5973608/e87ef81f-3ed5-4c31-8976-257c9d604668/dialogflow-googleassistant-logo.png" alt="Google Dialogflow with Google Assistant" />
+          <h2>Google Dialogflow with Google Assistant</h2>
+          <p>Dialogflow is a human-computer interaction development tool provided by Google. It is mainly focused on natural language processing and has been widely used in different applications. Google Assistant is one of the most famous examples of using DialogFlow.</p>
+        </div>
+        <div class="technology">
+          <img src="https://assets-us-01.kc-usercontent.com/c8c27f8d-758d-0020-22c5-e689f5973608/a0e695bf-478e-4930-aa41-b4e8d8cac51c/cortana-logo.png" alt="Microsoft Bot Framework with Cortana" />
+          <h2>Microsoft Bot Framework with Cortana</h2>
+          <p>The Microsoft Bot Framework allows developers to build, connect, deploy, and manage intelligent bots to interact naturally with your users on websites, applications, Cortana, Microsoft Teams, Skype, Slack, Facebook Messenger and more. Cortana from Microsoft is focused on business scenarios.</p>
+        </div>
+        <div class="technology">
+          <img src="https://assets-us-01.kc-usercontent.com/c8c27f8d-758d-0020-22c5-e689f5973608/d25ec10b-89c5-455d-829b-6a188cd7e804/alexa-logo.png" alt="Amazon Alexa" />
+          <h2>Amazon Alexa</h2>
+          <p>Alexa is a cloud-based virtual assistant developed by Amazon. It works as a voice service that offers customers an intuitive way to interact with the technology they use every day. Since first used in the Amazon Echo smart speakers, Alexa is now available on millions of devices from Amazon and third-party devices.</p>
+        </div>
+        <div class="technology">
+          <img src="https://assets-us-01.kc-usercontent.com/c8c27f8d-758d-0020-22c5-e689f5973608/dd6ba175-6f8c-49ee-ad74-d81d7251bc00/ms-azure-logo.png" alt="Microsoft Azure" />
+          <h2>Microsoft Azure</h2>
+          <p>Azure provides an on-demand infrastructure that scales and adapts to your changing business needs. Whether you're creating new applications or running existing applications, Azure provides the best price-performance and end-to-end support. SSW often uses Microsoft Azure to host the logic for APIs. Read about SSW's Azure consulting services.</p>
+        </div>
+      </div>
+      </section>
+  <section class="offwhite-background">
+    <h1><strong>Talk</strong> to us about your Bot today</h1>
     <h2>Jump on a call with one of our Account Managers to discuss how we can help you.</h2>
     <button type="button" class="ripple">Book a FREE Initial Meeting</button>
     <h2>or call on <a href="tel:+61299533000">+61 2 9953 3000</a></h2>

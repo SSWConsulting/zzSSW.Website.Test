@@ -1,8 +1,0 @@
-<h1 *ngIf="benefits" [innerHTML]="benefits.heading.value | strongFirstWord | safe: 'html'"></h1>
-<div *ngIf="benefits" class="benefits">
-    <ng-container *ngFor="let benefit of benefits.benefitTiles.value">
-      <app-benefits-detail [benefit]="benefit" class="benefit"></app-benefits-detail>
-    </ng-container>
-</div>
-
-

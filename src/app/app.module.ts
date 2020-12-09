@@ -9,9 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './modules/general/header/header.component';
 import { HeaderNavigationComponent } from './modules/general/header-navigation/header-navigation.component';
 import { FooterComponent } from './modules/general/footer/footer.component';
-import { TestimonialsModule } from './modules/general/testimonials/testimonials.module';
-import { TechnologiesModule } from './modules/general/technologies/technologies.module';
-import { BenefitsModule } from './modules/general/benefits/benefits.module';
 
 @NgModule({
   declarations: [
@@ -24,10 +21,7 @@ import { BenefitsModule } from './modules/general/benefits/benefits.module';
   ],
   imports: [
     AppRoutingModule,
-    BrowserAnimationsModule,
-    TestimonialsModule,
-    TechnologiesModule,
-    BenefitsModule
+    BrowserAnimationsModule
   ],
   providers: [ ],
   bootstrap: [

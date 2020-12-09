@@ -6,7 +6,6 @@ import { ItemResponses, IDeliveryClient, DeliveryClient, TypeResolver } from '@k
 
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { TestimonialTile } from 'src/app/models/testimonial_tile';
-import { TechnologiesDetailComponent } from 'src/app/modules/general/technologies/technologies-detail/technologies-detail.component';
 import { TechnologyTile } from 'src/app/models/technology_tile';
 import { BenefitTile } from 'src/app/models/benefit_tile';
 import { BenefitsList } from 'src/app/models/benefits_list';

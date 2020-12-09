@@ -9,12 +9,11 @@ header, main, footer {
 img.youtube {
   max-width: 100%;
   margin: 20px;
+  @media (max-width: 768px) {
+    max-width: 80%;
+    margin: 10px 10%;
+  }
 }
-
 .wip {
   display: none !important;
-}
-
-p.main{
-  padding: 8%;
 }

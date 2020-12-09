@@ -6,9 +6,6 @@ import { ConsultingServicesDetailComponent } from './consulting-services-detail/
 import { ConsultingServicesRoutingModule } from './consulting-services-routing.module';
 import { ConsultingServicesService } from './consulting-services.service';
 
-import { TestimonialsModule } from 'src/app/modules/general/testimonials/testimonials.module';
-import { TechnologiesModule } from 'src/app/modules/general/technologies/technologies.module';
-import { BenefitsModule } from 'src/app/modules/general/benefits/benefits.module';
 import { SSWCommonModule } from 'src/app/modules/general/common/ssw.common.module';
 
 @NgModule({
@@ -19,10 +16,7 @@ import { SSWCommonModule } from 'src/app/modules/general/common/ssw.common.modul
   imports: [
     SSWCommonModule,
     CommonModule,
-    ConsultingServicesRoutingModule,
-    TestimonialsModule,
-    TechnologiesModule,
-    BenefitsModule
+    ConsultingServicesRoutingModule
   ],
   exports: [
     ConsultingServicesListComponent,
