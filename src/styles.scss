@@ -6,14 +6,72 @@ header, main, footer {
   margin: 0 auto;
 }
 
-img.youtube {
+
+.video-player {
+  position: relative;
+  padding-bottom: 56.23%;
+  /* Use 75% for 4:3 videos */
+  height: 0;
+  overflow: hidden;
   max-width: 100%;
-  margin: 20px;
-  @media (max-width: 768px) {
-    max-width: 80%;
-    margin: 10px 10%;
+  margin: 0;
+
+
+ iframe {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  margin: auto;
+  border: none;
+}
+
+ img {
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin: auto;
+  max-width: 50%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: .4s all;
+  -moz-transition: .4s all;
+  transition: .4s all;
+}
+
+ img:hover {
+  -webkit-filter: brightness(75%);
+  filter: brightness(75%);
+}
+
+ .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url(assets/images/play.png) no-repeat;
+  cursor: pointer;
   }
 }
+
 .wip {
   display: none !important;
 }
+
+
